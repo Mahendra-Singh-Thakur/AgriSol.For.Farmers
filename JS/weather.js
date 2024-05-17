@@ -8,7 +8,7 @@ document.getElementById('cityForm').addEventListener('submit', function(event) {
 function getWeather(city) {
     const apiKey = 'bf733387ae12e236333921a2d4301ada'; // Replace with your API key
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
-
+    
     fetch(apiUrl)
         .then(response => {
             if (!response.ok) {
